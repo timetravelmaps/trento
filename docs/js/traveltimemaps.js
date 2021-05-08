@@ -80,7 +80,6 @@ var background = L.tileLayer('https://tiles.openaerialmap.org/60770b0fb85cd80007
 });
 
 var foreground = L.tileLayer.mask('https://mapwarper.net/maps/tile/19481/{z}/{x}/{y}.png ', {
-    maskSize: 256,
     attribution: 'Pianta della città di Trento - 1915 <a href="https://commons.wikimedia.org/wiki/File:Battisti_-_Il_Trentino,_cenni_geografici,_storici,_economici,_1915_72.jpg">Wikimedia Commmons</a> '
 });
 
@@ -114,7 +113,6 @@ function changeview(v) {
         case 0:
             if (foreground._url == background._url) {
                 foreground = L.tileLayer.mask(foreground._url, {
-                    maskSize: 256,
                     attribution: foreground.options.attribution
                 });
                 background = L.tileLayer(backgroundright._url, {
@@ -139,14 +137,12 @@ function changeview(v) {
         case 2:
             if (foregroundleft._url == background._url) {
                 foreground = L.tileLayer.mask(foreground._url, {
-                    maskSize: 256,
                     attribution: foreground.options.attribution
                 });
                 background = L.tileLayer(backgroundright._url, {
                     attribution: backgroundright.options.attribution
                 });
                 foregroundleft = L.tileLayer(foreground._url, {
-                    maskSize: 256,
                     attribution: foreground.options.attribution
                 });
             }
@@ -267,7 +263,6 @@ function changeLayers(v, lmap, lmap2) {
     switch (v) {
         case 0:
             foreground = L.tileLayer.mask(lmap.url, {
-                maskSize: 256,
                 attribution: lmap.attribution
             });
             layermapb = configmaps.maps[rightmapid];
@@ -284,7 +279,6 @@ function changeLayers(v, lmap, lmap2) {
             break;
         case 1:
             foreground = L.tileLayer.mask(lmap.url, {
-                maskSize: 256,
                 attribution: lmap.attribution
             });
             background = L.tileLayer(lmap.url, {
@@ -312,7 +306,6 @@ function changeLayers(v, lmap, lmap2) {
             break;
         case 3:
             foreground = L.tileLayer.mask(lmap.url, {
-                maskSize: 256,
                 attribution: lmap.attribution
             });
             background = L.tileLayer(lmap.url, {
