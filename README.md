@@ -5,7 +5,7 @@ un sito web (da vedere da computer) con cui visitare i cambiamenti di Trento att
 
 https://timetravelmaps.github.io/trento/
 
-![](https://timetravelmaps.github.io/trento/video/demo.mp4)
+![](https://github.com/timetravelmaps/trento/raw/main/demo.gif)
 
 ## FAQ
 ### è possibile contribuire con altre mappe?
