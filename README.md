@@ -3,9 +3,9 @@ Trento Time Travel Maps
 
 un sito web (da vedere da computer) con cui visitare i cambiamenti di Trento attraverso mappe di vari anni e con varie visualizzazioni.
 
-https://napo.github.io/trentotimetravelmaps/
+https://timetravelmaps.github.io/trento/
 
-![](https://napo.github.io/trentotimetravelmaps/video/demo.mp4)
+![](https://timetravelmaps.github.io/trento/video/demo.mp4)
 
 ## FAQ
 ### è possibile contribuire con altre mappe?
